@@ -12,8 +12,10 @@ services:
       - minio
   thumbor:
     image: apsl/thumbor
+    container_name: thumbor
   minio:
     image: minio/minio
+    container_name: minio
     volumes:
       - ./data:/data
       - ./config:/root/.minio
