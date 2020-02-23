@@ -1,7 +1,7 @@
-FROM openresty/openresty:alpine
-LABEL name="rongfengliang"
+FROM openresty/openresty:1.15.8.2-7-bionic
+LABEL name="www.datayang.com"
 LABEL version="v1.0.0"
-ENV name=rongfengliang
+ENV name=datyang
 ENV version=v1.0.0
 COPY nginx.conf usr/local/openresty/nginx/conf/
 EXPOSE 80
