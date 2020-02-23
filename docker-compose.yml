@@ -21,4 +21,7 @@ services:
       - ./config:/root/.minio
     ports:
       - 9091:9000
+    environment:
+      MINIO_ACCESS_KEY: admin
+      MINIO_SECRET_KEY: admin1233456788
     command: server /data
